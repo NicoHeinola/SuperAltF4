@@ -11,7 +11,7 @@ import time
 from systemtray import SuperAltF4Tray
 import keyboard
 from pygame import time as pg_time
-import setproctitle
+#import setproctitle
 
 
 class Main:
@@ -44,7 +44,7 @@ class Main:
 
 
 if __name__ == '__main__':
-    setproctitle.setproctitle("Test 1234 :DD")
+    #setproctitle.setproctitle("Test 1234 :DD")
     app = QtWidgets.QApplication(sys.argv)
     main = Main()
     threading.Thread(target=main.start, daemon=True).start()
